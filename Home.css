@@ -1,0 +1,151 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(215, 166, 233);
+  }
+  
+  header {
+    background-color: #1c1b1b;
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  nav {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background: linear-gradient(to right, #303030, #202020);
+    color: rgb(255, 255, 255);
+    transition: background 0.3s;
+  }
+  
+  nav ul:hover {
+    background: linear-gradient(to right, #202020, #101010);
+  }
+  
+  nav ul li {
+    padding: 0 12px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  nav ul li a:hover {
+    color: #aaffff;
+  }
+  
+  .brand img {
+    width: 44px;
+    padding: 0 8px;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      height: auto;
+      overflow: hidden;
+    }
+  
+    nav ul:hover {
+      background: linear-gradient(to bottom, #202020, #101010);
+    }
+  
+    nav ul li {
+      padding: 15px;
+      text-align: center;
+    }
+  }
+  
+  .brand img {
+    width: 44px;
+    padding: 0 8px;
+    align-items: center;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+  }
+  
+  /* Navbar Animation */
+  .navbar {
+    background: linear-gradient(to right, #fbd3d3, #f8ebeb);
+    color: #333;
+    text-align: center;
+    padding: 1em;
+    transition: background 0.3s;
+  }
+  
+  .navbar:hover {
+    background: linear-gradient(to right, #f8ebeb, #fbd3d3);
+  }
+  
+  /* Services Provided Animation */
+  #services-provided ul {
+    list-style-type: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #330909;
+    color: aqua;
+    border: 1px solid #ccc;
+    transition: color 0.3s;
+  }
+  
+  #services-provided ul:hover {
+    color: #ff1493;
+  }
+  
+  /* Subscription Plans Animation */
+  #subscription-plans .plan {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  #subscription-plans .plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.25em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
